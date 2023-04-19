@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drip</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="content">
+        <section class="flex flex-col items-center mt-20">
+            <img class="mb-12" src="Assets/drip logo.svg" alt="">
+            <ol>
+                <li class="Pro">Product type</li>
+                <li  id="Choose">Choose plan</li>
+                <li id="Calculate">Calculate earnings</li>
+            </ol>
+        </section>
+        <span class="font-bold text-black text-6xl mt-12 leading-12 flex flex-col items-center
+            ">Choose product type</span>
+        <p class="font-normal text-gray-500 text-base mt-6 leading-6 flex flex-col items-center
+        ">We make it easy for you to sell your products and reach a wider audience</p>
+        <main class="flex gap-8 mt-8">
+            <div class="w-64 h-64 border border-gray-300 rounded-lg relative
+            ">
+                <label>
+                    <input type="radio" name="color" value="blue" class="w-5 h-5 ml-2 mt-2 rounded-full border-2 border-gray-300 appearance-none checked:border-blue-500 checked:border-4 ">
+                    <span class="absolute top-1 right-2 bg-green-100 rounded-2xl text-sm font-medium text-green-700 py-1 px-2">Printable</span>
+                    <div class="cursor-pointer flex flex-col flex-wrap items-center">
+                        <img class="mt-2" src="Assets/Clothes.svg" alt="T-shirt">
+                        <span class="font-medium text-gray-600 text-lg mt-6 leading-6font-medium text-gray-900 text-lg mt-6 leading-6">Clothes</span>
+                        <p class="font-normal text-gray-500 text-sm mt-4 leading-5">T-shirts, Hoodies, Jeans</p>
+                    </div>
+                </label>
+            </div>
+            <div class=" w-64 h-64 border border-gray-300 rounded-lg relative
+            ">
+                <label>
+                    <input type="radio" name="color" value="blue" class="w-5 h-5 ml-2 mt-2 rounded-full border-2 border-gray-300 appearance-none checked:border-blue-500 checked:border-4">
+                    <span class="absolute top-1 right-2 bg-gray-50 rounded-2xl text-sm font-medium text-gray-600 py-1 px-2">Coming soon</span>
+                    <div class="cursor-pointer flex flex-col flex-wrap items-center">
+                        <img class="mt-2" src="Assets/Posters.svg" alt="T-shirt">
+                        <span class="font-medium text-gray-600 text-lg mt-6 leading-6">Posters</span>
+                        <p class="font-normal text-gray-500 text-sm mt-4 leading-5">Any type of poster size</p>
+                    </div>
+                </label>
+            </div>
+            <div class="w-64 h-64 border border-gray-300 rounded-lg relative
+            ">
+                <label>
+                    <input type="radio" name="color" value="blue" class="w-5 h-5 ml-2 mt-2 rounded-full border-2 border-gray-300 appearance-none checked:border-blue-500 checked:border-4">
+                    <span class="absolute top-1 right-2 bg-gray-50 rounded-2xl text-sm font-medium text-gray-600 py-1 px-2">Coming soon</span>
+                    <div class="cursor-pointer flex flex-col flex-wrap items-center">
+                        <img class="mt-2" src="Assets/Objects.svg" alt="T-shirt">
+                        <span class="font-medium text-gray-600 text-lg mt-6 leading-6">Objects</span>
+                        <p class="font-normal text-gray-500 text-sm mt-4 leading-5">Ceramics, Wooden objects</p>
+                    </div>
+                </label>
+            </div>
+        </main>
+        <footer class="flex justify-between items-center mt-12 border-b border-gray-300 pb-12">
+            <span>Specify product</span>
+            <div class="flex">
+                <div id="div" class="rounded-tl-lg rounded-bl-lg text-sm font-medium leading-5 py-2 px-4 border border-gray-300 cursor-pointer">T-shirt</div>
+                <div id="div" class="text-sm font-medium leading-5 py-2 px-4 border border-gray-300 cursor-pointer">Hoodie</div>
+                <div id="div" class="text-sm font-medium leading-5 py-2 px-4 border border-gray-300 cursor-pointer">Jeans</div>
+                <div id="div" class="text-sm font-medium leading-5 py-2 px-4 border border-gray-300 cursor-pointer">Caps</div>
+                <div id="div" class="rounded-r-lg text-sm font-medium leading-5 py-2 px-4 border border-gray-300 cursor-pointer">Other</div>
+            </div>
+        </footer>
+        <div class="flex items-end justify-end mt-6">
+            <button id="Cancel"class="w-40 h-12 py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Cancel</button>
+            <button id="Continue" class="w-52 h-12 rounded-2 font-400 text-4 leading-6 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-4 rounded-lg text-sm px-5 py-2.5  mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Continue</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
